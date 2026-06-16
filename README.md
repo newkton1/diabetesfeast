@@ -30,73 +30,13 @@ deploy/
 
 ## DigitalOcean deployment options
 
-### Option A — App Platform (easiest, no server config)
+### App Platform (easiest, no server config)
 
 1. Push the `deploy/` folder contents to a GitHub repo (e.g. `diabetesfeast-website`)
 2. In DigitalOcean → **App Platform** → Create App
 3. Select your GitHub repo, set **output directory** to `/` (root)
 4. Set build type to **Static Site**
 5. Deploy — DigitalOcean handles CDN + HTTPS automatically
-
-### Option B — Droplet with Nginx
-
-SSH into your droplet, then:
-
-```bash
-# Install Nginx
-sudo apt update && sudo apt install nginx -y
-
-# Copy files to web root
-sudo mkdir -p /var/www/diabetesfeast
-sudo cp -r deploy/* /var/www/diabetesfeast/
-
-# Create Nginx config
-sudo nano /etc/nginx/sites-available/diabetesfeast
-```
-
-Paste this config:
-
-```nginx
-server {
-    listen 80;
-    server_name diabetesfeast.jp www.diabetesfeast.jp;
-    root /var/www/diabetesfeast;
-    index index.html;
-
-    location / {
-        try_files $uri $uri/ /index.html;
-    }
-
-    # Serve .jsx files as JavaScript
-    location ~* \.jsx$ {
-        add_header Content-Type text/javascript;
-    }
-
-    # Cache static assets
-    location ~* \.(css|png|jpg|jpeg|gif|svg|ico|woff2)$ {
-        expires 30d;
-        add_header Cache-Control "public, immutable";
-    }
-}
-```
-
-```bash
-# Enable site and reload
-sudo ln -s /etc/nginx/sites-available/diabetesfeast /etc/nginx/sites-enabled/
-sudo nginx -t && sudo systemctl reload nginx
-
-# Add HTTPS with Certbot
-sudo apt install certbot python3-certbot-nginx -y
-sudo certbot --nginx -d diabetesfeast.jp -d www.diabetesfeast.jp
-```
-
-### Option C — Spaces (object storage + CDN)
-
-1. Create a **Space** in your nearest region
-2. Enable **CDN** on the Space
-3. Upload all files from `deploy/` preserving folder structure
-4. Set `index.html` as the index document
-5. Point your domain CNAME to the Space CDN endpoint
 
 ---
 
@@ -115,6 +55,3 @@ In `index.html`, find the waitlist form and replace it with:
 
 ---
 
-## Contact
-
-Robert Hancock · roberthancock@diabetesfeast.jp · www.diabetesfeast.jp
