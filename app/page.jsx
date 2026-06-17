@@ -364,9 +364,8 @@ function Footer() {
           <span style={{ fontSize: 16, fontWeight: 700, color: 'rgba(255,255,255,0.75)' }}>Diabetes Feast</span>
         </div>
         <div style={{ fontSize: 13, color: 'rgba(255,255,255,0.45)', marginBottom: 20 }}>
-          <a href="mailto:roberthancock@diabetesfeast.jp" style={{ color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>roberthancock@diabetesfeast.jp</a>
           {' · '}
-          <a href="http://www.diabetesfeast.jp" style={{ color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>www.diabetesfeast.jp</a>
+          <a href="http://www.diabetesfeast.com" style={{ color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>www.diabetesfeast.com</a>
         </div>
         <p style={{ fontSize: 12, color: TH.footText, lineHeight: 1.7, maxWidth: 640 }}>
           Diabetes Feast is a personal wellness journal for people living with Type 2 diabetes or pre-diabetes. It is not a medical device, diagnostic tool, or clinical service. All content reflects personal documented experience and is not a clinical study, product guarantee, or medical recommendation. Results will vary. Always consult your healthcare provider before making changes to your diabetes management.
