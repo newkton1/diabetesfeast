@@ -366,12 +366,13 @@ function Footer() {
         <div style={{ fontSize: 13, color: 'rgba(255,255,255,0.45)', marginBottom: 20 }}>
           {' · '}
           <a href="http://www.diabetesfeast.com" style={{ color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>www.diabetesfeast.com</a>
+           {' · '}
         </div>
         <p style={{ fontSize: 12, color: TH.footText, lineHeight: 1.7, maxWidth: 640 }}>
           Diabetes Feast is a personal wellness journal for people living with Type 2 diabetes or pre-diabetes. It is not a medical device, diagnostic tool, or clinical service. All content reflects personal documented experience and is not a clinical study, product guarantee, or medical recommendation. Results will vary. Always consult your healthcare provider before making changes to your diabetes management.
         </p>
         <div style={{ marginTop: 24, paddingTop: 20, borderTop: '1px solid rgba(255,255,255,0.05)', fontSize: 12, color: TH.footText }}>
-          &copy; {new Date().getFullYear()} Diabetes Feast. All rights reserved. Confidential — not for distribution without written permission.
+          &copy; {new Date().getFullYear()} Diabetes Feast. All rights reserved.
         </div>
       </div>
     </footer>
