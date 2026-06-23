@@ -328,7 +328,7 @@ function Privacy() {
 /* ── FAQ ─────────────────────────────────────────────────────────── */
 const FAQS = [
   { q: 'Is Diabetes Feast a medical device?', a: "No. It's a personal wellness journal — not a medical device, diagnostic tool, or clinical service. It doesn't provide medical advice, diagnoses, or treatment recommendations. Always consult your healthcare provider for medical decisions." },
-  { q: 'Which CGMs are supported?', a: 'Any CGM that syncs glucose readings to Apple Health is supported — including FreeStyle Libre and Dexcom. You can also log finger-stick readings manually at any time.' },
+  { q: 'Which CGMs are supported?', a: 'Dexcom G7 and Freestyle Libre 3 CGMs that can sync glucose readings to Apple Health are supported. You can also log finger-stick readings manually at any time.' },
   { q: 'What is the GMI shown in the app?', a: "The Glucose Management Indicator (GMI) is an informational metric derived from the published Bergenstal formula, calculated from your last 14 days of glucose data. It's the same figure shown by major CGM apps. Always use your lab HbA1c for medical decisions." },
   { q: 'How is my health data protected?', a: 'Your data never leaves your iPhone. Diabetes Feast has no backend server, no user accounts, and no analytics. It reads from Apple Health but does not write to it. Uninstalling the app removes all local data.' },
   { q: 'When will the app be available?', a: "Diabetes Feast is currently awaiting approval from the Apple App Store. Enter your email in the form above and we'll notify you the moment it's live." },
@@ -365,7 +365,7 @@ function Footer() {
         </div>
         <div style={{ fontSize: 13, color: 'rgba(255,255,255,0.45)', marginBottom: 20 }}>
           {' · '}
-          <a href="http://www.diabetesfeast.com" style={{ color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>www.diabetesfeast.com</a>
+          <a href="http://diabetesfeast.com" style={{ color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>diabetesfeast.com</a>
            {' · '}
         </div>
         <p style={{ fontSize: 12, color: TH.footText, lineHeight: 1.7, maxWidth: 640 }}>
