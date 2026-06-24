@@ -24,7 +24,7 @@ const TH = {
   inputBg: 'rgba(23,38,61,0.04)', inputBorder: 'rgba(23,38,61,0.15)',
   shotBg: B.offWhite,
   privBg: B.navy, privSub: 'rgba(255,255,255,0.55)',
-  footBg: B.navyDp, footText: 'rgba(255,255,255,0.35)',
+  footBg: B.navyDp, footText: 'rgba(255,255,255,0.6)',
   divBg: B.offWhite,
 };
 
@@ -363,10 +363,12 @@ function Footer() {
           <LogoMark size={32} />
           <span style={{ fontSize: 16, fontWeight: 700, color: 'rgba(255,255,255,0.75)' }}>Diabetes Feast</span>
         </div>
-        <div style={{ fontSize: 13, color: 'rgba(255,255,255,0.45)', marginBottom: 20 }}>
+        <div style={{ fontSize: 13, color: 'rgba(255,255,255,0.65)', marginBottom: 20 }}>
           {' · '}
-          <a href="http://diabetesfeast.com" style={{ color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}>diabetesfeast.com</a>
-           {' · '}
+          <a href="http://diabetesfeast.com" style={{ color: 'rgba(255,255,255,0.65)', textDecoration: 'none' }}>diabetesfeast.com</a>
+          {' · '}
+          <a href="mailto:roberthancock@diabetesfeast.jp" style={{ color: 'rgba(255,255,255,0.65)', textDecoration: 'none' }}>roberthancock@diabetesfeast.jp</a>
+          {' · '}
         </div>
         <p style={{ fontSize: 12, color: TH.footText, lineHeight: 1.7, maxWidth: 640 }}>
           Diabetes Feast is a personal wellness journal for people living with Type 2 diabetes or pre-diabetes. It is not a medical device, diagnostic tool, or clinical service. All content reflects personal documented experience and is not a clinical study, product guarantee, or medical recommendation. Results will vary. Always consult your healthcare provider before making changes to your diabetes management.
